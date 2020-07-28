@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.example</groupId>
+	<artifactId>sap-ale-kafka-demo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>SAP ALE Kafka demo via JCo Server</name>
+	<description>Read IDOCs from SAP and produce messages to Kafka</description>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>sap</groupId>
+			<artifactId>sapjco3</artifactId>
+			<version>3.0.18</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/sapjco3.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>sap</groupId>
+			<artifactId>sapidoc3</artifactId>
+			<version>30</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/sapidoc3.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-clients</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+	</dependencies>
+	<build><plugins>
+	<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-jar-plugin</artifactId>
+<version>2.4</version>
+<configuration>
+  <archive>
+    <manifest>
+	<mainClass>com.example.sap.ale.kafka.IDocServerExample</mainClass>
+    </manifest>
+  </archive>
+</configuration>
+    </plugin></plugins></build>
+</project>

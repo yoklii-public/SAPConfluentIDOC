@@ -1,0 +1,10 @@
+jco.client.type=3
+jco.client.client=100
+jco.client.user=S4H_SD
+jco.client.passwd=CHANGE_ME!
+jco.client.lang=en
+jco.client.mshost=vhcals4hci
+jco.client.r3name=S4H
+jco.client.group=PUBLIC
+jco.client.trace=1
+jco.destination.repository_destination=S4H

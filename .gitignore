@@ -1,0 +1,10 @@
+/target/
+.project
+/ssl/*.jks
+.classpath
+.settings
+/*.trc
+/*idoc.xml
+/*.jco*
+*.DS_Store
+

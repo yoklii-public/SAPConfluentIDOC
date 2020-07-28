@@ -1,0 +1,11 @@
+jco.server.progid=KAFKATEST
+jco.server.name=KAFKATEST
+jco.server.gwhost=vhcals4hci
+jco.server.gwserv=sapgw00
+jco.server.connection_count=1
+jco.server.repository_destination=S4H
+
+
+
+
+
