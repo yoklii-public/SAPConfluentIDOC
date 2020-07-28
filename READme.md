@@ -43,8 +43,8 @@ I will generally use the free/developer instance available on CAL - the current 
 		> running the application
 
 		```shell
-		$ brew update
-		$ brew install fvcproductions
+		$ mvn package
+		$ java -jar target/...sap_ale_kafka_demo....jar
 ## Environment Configuration
 
 **Network Consideration**
